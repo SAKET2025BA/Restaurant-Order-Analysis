@@ -1,80 +1,83 @@
-Restaurant Order Analysis
+Restaurant Order Analysis 📊
 
-Analyzed restaurant order data using MySQL to identify top-selling dishes, least popular items, cuisine trends, and customer spending behavior.
+Analyzed a restaurant's order data using MySQL to uncover insights about top-selling dishes, customer spending behavior, and cuisine-wise performance. The project focuses on using SQL queries and visual analytics to support data-driven decision-making.
 
 Project Overview
 
-This project explores a quarter’s worth of restaurant order data from a fictitious international cuisine restaurant.
-Using SQL, the analysis uncovers menu insights, order patterns, and customer behavior to support data-driven decision-making.
+This project explores one quarter's worth of restaurant order data from a fictitious international cuisine restaurant.
 
-Dataset Overview
+Identify top-selling dishes and most expensive items
+
+Analyze customer spending patterns
+
+Understand cuisine-wise popularity and revenue contribution
+
+Generate actionable insights through SQL and visualizations
+
+Dataset Details
 
 Database Name: restaurant_db
 
-Tables:
+Tables
 
-menu_items → Contains menu details (32 dishes)
+menu_items → Menu details (32 dishes)
 
 order_details → Order-level transactions (~12,266 records)
 
-Files Included:
+Files Included
 
-data/create_restaurant_db.sql → Database setup and sample data.
+data/create_restaurant_db.sql → Database setup and sample data
 
-data/restaurant_db_data_dictionary.csv → Metadata for reference.
+data/restaurant_db_data_dictionary.csv → Metadata
 
-Project Objectives
-1. Menu Items Analysis (01_menu_items_analysis.sql)
+Key Objectives
 
-Count total items on the menu.
+Calculate average pricing trends across cuisines
 
-Identify least and most expensive dishes.
+Identify top 5 most expensive dishes
 
-Analyze Italian dishes, including counts and price ranges.
+Evaluate cuisine-wise menu distribution
 
-Determine category-wise dish count and average price.
+Rank top 5 highest spending orders
 
-2. Orders Analysis (02_orders_analysis.sql)
+Analyze revenue contribution by cuisine
 
-Understand dataset date range.
+Highlight top 5 frequently ordered dishes
 
-Find total orders and items ordered.
+SQL Techniques Used 🛠️
 
-Identify orders with the highest number of items.
+Joins → INNER JOIN, LEFT JOIN
 
-Count orders with 12+ items.
+Grouping & Aggregation → COUNT, SUM, AVG
 
-3. Customer Behavior Analysis (03_customer_behavior.sql)
+Subqueries & Derived Tables
 
-Find least and most ordered items by category.
+Sorting & Filtering → ORDER BY, LIMIT
 
-Identify the top five highest-spending orders.
+Visualization → Exported results into Excel & Power BI-ready datasets
 
-View item details of the highest-spending order.
+Visual Insights 📈
+1. Average Price by Cuisine
 
-Bonus: Analyze the top five highest-spending orders in detail.
+2. Top 5 Most Expensive Dishes
 
-Key Insights (to be added later)
+3. Menu Distribution by Cuisine
 
-Visual insights will be added to make the repository more interactive:
+4. Top 5 Highest Spending Orders
 
-Top five best-selling dishes.
+5. Cuisine-wise Revenue Contribution
 
-Cuisine-wise popularity.
+6. Top 5 Most Frequently Ordered Dishes
 
-Top five highest-spending orders.
-
-Most expensive order breakdown.
-
-How to Run This Project
-Step 1 — Restore the Database
+How to Run This Project 🖥️
+Step 1 — Setup Database
 mysql -u root -p < data/create_restaurant_db.sql
 
 Step 2 — Execute Queries
 
-Open MySQL Workbench.
+Open MySQL Workbench
 
-Load and execute the following SQL scripts in order:
+Load and execute SQL scripts in this order:
 
 01_menu_items_analysis.sql
 
@@ -82,19 +85,9 @@ Load and execute the following SQL scripts in order:
 
 03_customer_behavior.sql
 
-Tools & Skills Used
+Project Highlights 🌟
 
-Database: MySQL
-
-Techniques Applied:
-
-Joins (INNER, LEFT)
-
-Grouping and aggregation (COUNT, SUM, AVG)
-
-Subqueries and derived tables
-
-Sorting and filtering
-
-Visualization: MySQL Workbench (to be added)
-Visualization: MySQL Workbench (to be added)
+✅ Structured SQL-driven analysis
+✅ Professional visual dashboards
+✅ Clean and recruiter-friendly documentation
+✅ Scalable foundation for Power BI integration
