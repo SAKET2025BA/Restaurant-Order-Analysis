@@ -88,6 +88,4 @@ Load and execute SQL scripts in this order:
 Project Highlights 🌟
 
 ✅ Structured SQL-driven analysis
-✅ Professional visual dashboards
-✅ Clean and recruiter-friendly documentation
 ✅ Scalable foundation for Power BI integration
